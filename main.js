@@ -15,7 +15,7 @@ function playRound(playerSelection, computerSelection){
        
     return (winner ? 'player wins!':'computer wins!');
  }
-
+// call this in the console to start playing
  function game(){
     let playerSelection;
     let computerSelection;
@@ -32,6 +32,7 @@ function playRound(playerSelection, computerSelection){
      }
  }
 
+ // a little helper function to let the computer choose which sign to play
  function computerChooses(){
     let selections = Array("rock","paper","scissor")
     return selections[Math.floor(Math.random() * selections.length)];
